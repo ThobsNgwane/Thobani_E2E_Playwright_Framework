@@ -24,8 +24,8 @@ export class checkoutPage {
 
   async enterTheBillingAddress(){
     await this.continueButton.nth(0).waitFor({state:"visible"});
-    //await this.continueButton.first().click();
-    //await expect(this.pickupInStoreChkbox).toBeVisible();
+    await this.continueButton.first().click();
+    await expect(this.pickupInStoreChkbox).toBeVisible();
   }
 
   async enterShippingAddress(){
